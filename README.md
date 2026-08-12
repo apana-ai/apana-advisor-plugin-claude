@@ -53,7 +53,7 @@ et une clé SSH.
 ### Voie 2 — installation individuelle
 
 ```
-/plugin marketplace add apana-ai/apana-advisor-plugin
+/plugin marketplace add apana-ai/apana-advisor-plugin-claude
 /plugin install apana-advisor@apana
 ```
 

@@ -8,6 +8,6 @@
     "url": "https://apana.ai"
   },
   "homepage": "https://advisor.apana.ai",
-  "repository": "https://github.com/apana-ai/apana-advisor-plugin",
+  "repository": "https://github.com/apana-ai/apana-advisor-plugin-claude",
   "keywords": ["patrimoine", "fiscalite", "simulation", "cgp", "wealth-management", "france"]
 }
