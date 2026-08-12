@@ -1,0 +1,13 @@
+{
+  "name": "apana-advisor",
+  "displayName": "Apana Advisor",
+  "version": "0.1.0",
+  "description": "Doctrine patrimoniale et simulateurs fiscaux auditables pour conseillers en gestion de patrimoine. L'IA ne calcule pas : elle pilote des moteurs de calcul vérifiés et cite ses sources.",
+  "author": {
+    "name": "Apana",
+    "url": "https://apana.ai"
+  },
+  "homepage": "https://advisor.apana.ai",
+  "repository": "https://github.com/apana-ai/apana-advisor-plugin",
+  "keywords": ["patrimoine", "fiscalite", "simulation", "cgp", "wealth-management", "france"]
+}
