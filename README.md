@@ -38,12 +38,31 @@ La connexion se fait par OAuth au premier appel d'un outil — il n'y a ni clé 
 
 ## Installation
 
+Ce plugin est distribué **en accès restreint**, pas via un catalogue public. Il
+faut donc enregistrer le catalogue Apana avant d'installer :
+
 ```
-/plugin install apana-advisor
+/plugin marketplace add apana-ai/apana-advisor-plugin
+/plugin install apana-advisor@apana
 ```
+
+L'ajout du catalogue clone le dépôt : il suppose que votre compte y ait accès.
+Si la commande échoue à ce stade, c'est un problème d'accès au dépôt, pas au
+service — contacter Apana.
 
 Puis lancer une question patrimoniale, ou demander « onboarde-moi sur Advisor »
 pour un tour guidé.
+
+## Sans compte, le plugin ne fait rien
+
+Ce n'est pas une clause de style. Le plugin ne contient **aucune donnée, aucun
+calcul et aucun contenu doctrinal** : il ne fait que déclarer où joindre le
+service Apana Advisor et apprendre au modèle à passer par lui.
+
+Tout — doctrine, simulateurs, portefeuilles — vit derrière l'authentification du
+serveur. Un appel sans jeton valide est refusé : ni résultat, ni contenu, ni même
+la liste des outils disponibles. Installer le plugin sans compte provisionné ne
+donne donc accès à rien.
 
 ## Périmètre et responsabilité
 

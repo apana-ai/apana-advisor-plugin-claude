@@ -1,0 +1,14 @@
+{
+  "name": "apana",
+  "owner": { "name": "Apana", "url": "https://apana.ai" },
+  "description": "Plugins Apana pour conseillers en gestion de patrimoine.",
+  "plugins": [
+    {
+      "name": "apana-advisor",
+      "source": "./",
+      "description": "Doctrine patrimoniale et simulateurs fiscaux auditables. Nécessite un compte Apana Advisor.",
+      "version": "0.1.0",
+      "author": { "name": "Apana" }
+    }
+  ]
+}
