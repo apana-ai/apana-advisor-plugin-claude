@@ -38,20 +38,37 @@ La connexion se fait par OAuth au premier appel d'un outil — il n'y a ni clé 
 
 ## Installation
 
-Ce plugin est distribué **en accès restreint**, pas via un catalogue public. Il
-faut donc enregistrer le catalogue Apana avant d'installer :
+Ce plugin est distribué **en accès restreint**, pas via un catalogue public.
+Deux voies, selon votre organisation.
+
+### Voie 1 — votre organisation gère le catalogue (recommandé)
+
+Si votre cabinet dispose d'une offre Team ou Enterprise, votre administrateur
+enregistre le catalogue Apana une fois pour toutes. Le plugin vous est alors
+proposé sans manipulation de votre part, et sans compte GitHub.
+
+C'est la voie à privilégier : elle évite d'exiger de chaque conseiller un accès
+et une clé SSH.
+
+### Voie 2 — installation individuelle
 
 ```
 /plugin marketplace add apana-ai/apana-advisor-plugin
 /plugin install apana-advisor@apana
 ```
 
-L'ajout du catalogue clone le dépôt : il suppose que votre compte y ait accès.
-Si la commande échoue à ce stade, c'est un problème d'accès au dépôt, pas au
-service — contacter Apana.
+L'ajout du catalogue **clone le dépôt en SSH**. Cette voie suppose donc un compte
+GitHub disposant d'un accès en lecture au dépôt, et une clé SSH configurée sur
+votre poste.
 
-Puis lancer une question patrimoniale, ou demander « onboarde-moi sur Advisor »
-pour un tour guidé.
+Si la commande échoue à cette étape, c'est un problème d'accès au dépôt, pas au
+service : contacter Apana pour être ajouté.
+
+### Après installation
+
+Lancer une question patrimoniale, ou demander « onboarde-moi sur Advisor » pour
+un tour guidé. Au premier appel d'un outil, la connexion à votre compte Apana
+Advisor est demandée.
 
 ## Sans compte, le plugin ne fait rien
 
