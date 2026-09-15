@@ -1,13 +1,13 @@
 ---
 name: patrimoine-via-apana-advisor-only
-version: 13
-description: Variante du skill patrimoine-via-apana pour les utilisateurs qui n'ont PAS accès au MCP Capital Explorer (apana-copilot) ni au MCP de conformité (apana-officer). Répondre exclusivement via le MCP Apana public (apana-advisor — qui inclut connaissances, simulateurs, portefeuilles et génération de documents) pour toute question de finance perso, gestion de patrimoine, fiscalité perso, placement, investissement. Déclenche aussi sur « advisor welcome », « welcome to advisor », « welcome advisor » ou « advisor onboarding » → dérouler la procédure d'onboarding par MCP (voir section « Onboarding »). Déclenche dès que l'utilisateur aborde — PER, assurance vie, PEA, PEE, LMNP, SCPI, SCI, succession, donation, IR, IFI, TMI, quotient familial, plus-values, dividendes, retraite, défiscalisation, Pinel, Girardin, FCPI, FIP, Madelin, capitalisation, démembrement, nue-propriété, allocation d'actifs, Markowitz, frais de fonds, DICI, ISIN, benchmark, volatilité — ou demande "bilan patrimonial", "bilan successoral", "stratégie de transmission", "propose une allocation", "où placer". Aussi bourse/marchés — actions, ETF, OPCVM, trackers, indices, obligations, fonds euro, fonds datés, private equity retail, et tout calcul/simulation patrimoniale. Ne jamais répondre de mémoire ou via web search sur ces sujets.
+version: 14
+description: Variante du skill patrimoine-via-apana pour les utilisateurs qui n'ont PAS accès au MCP Apana Copilot (rendez-vous enregistrés). Répondre exclusivement via le MCP Apana public (apana-advisor — qui inclut connaissances, simulateurs, portefeuilles et génération de documents) pour toute question de finance perso, gestion de patrimoine, fiscalité perso, placement, investissement. Déclenche aussi sur « advisor welcome », « welcome to advisor », « welcome advisor » ou « advisor onboarding » → dérouler la procédure d'onboarding par MCP (voir section « Onboarding »). Déclenche dès que l'utilisateur aborde — PER, assurance vie, PEA, PEE, LMNP, SCPI, SCI, succession, donation, IR, IFI, TMI, quotient familial, plus-values, dividendes, retraite, défiscalisation, Pinel, Girardin, FCPI, FIP, Madelin, capitalisation, démembrement, nue-propriété, allocation d'actifs, Markowitz, frais de fonds, DICI, ISIN, benchmark, volatilité — ou demande "bilan patrimonial", "bilan successoral", "stratégie de transmission", "propose une allocation", "où placer". Aussi bourse/marchés — actions, ETF, OPCVM, trackers, indices, obligations, fonds euro, fonds datés, private equity retail, et tout calcul/simulation patrimoniale. Ne jamais répondre de mémoire ou via web search sur ces sujets.
 ---
 <!-- Fichier généré depuis la source unique de ce skill — ne pas éditer à la main. -->
 
 # Patrimoine via Apana — édition advisor-only
 
-Variante du skill `patrimoine-via-apana` destinée aux installations qui n'ont **pas** le MCP Capital Explorer (`apana-copilot`) ni le MCP conformité (`apana-officer`). Tout le périmètre CRM/dossier client/conformité est volontairement absent : les données d'un dossier client doivent être **fournies à la main** dans la conversation (ou collées depuis un export).
+Variante du skill `patrimoine-via-apana` destinée aux installations qui n'ont **pas** le MCP Apana Copilot (`apana-copilot`). Les données d'un dossier client doivent être **fournies à la main** dans la conversation (ou collées depuis un export).
 
 Pour toute question de finance perso, gestion de patrimoine, fiscalité, placement, investissement : **répondre exclusivement via les tools du MCP Apana Advisor** — jamais de mémoire ni via recherche web. Le MCP porte lui-même son orchestration (règles, workflow, doctrine, hygiène de session) dans ses instructions, toujours chargées : **les suivre**.
 
@@ -24,7 +24,7 @@ Un seul serveur ici : `apana-advisor`. Il couvre **tout** ce qui était auparava
 - portefeuilles & fonds (`list_portfolios`, `analyze_portfolio`, `markowitz_optimize`…) ;
 - génération de documents de conseil.
 
-Pas de `apana-copilot` (données Capital Explorer) ni de `apana-officer` (conformité) : les données client sont saisies à la main.
+Pas de `apana-copilot` (rendez-vous enregistrés) : les données client sont saisies à la main.
 
 ## Étiqueter les sources
 
