@@ -1,8 +1,8 @@
 ---
 name: patrimoine-via-apana-advisor-only
-description: Variante de patrimoine-via-apana pour les installations SANS le MCP Apana Copilot : données client fournies à la main. Répondre exclusivement via le MCP apana-advisor (connaissance, simulateurs, portefeuilles, documents) pour toute question de finance perso, gestion de patrimoine, fiscalité perso, placement, investissement. Déclenche dès que l'utilisateur aborde PER, assurance vie, PEA, PEE, LMNP, SCPI, SCI, succession, donation, IR, IFI, TMI, plus-values, dividendes, retraite, défiscalisation, Pinel, Girardin, FCPI, FIP, Madelin, capitalisation, démembrement, allocation d'actifs, Markowitz, frais de fonds, DICI, ISIN, volatilité, bilan patrimonial ou successoral, stratégie de transmission, « où placer » ; ainsi que bourse et marchés (actions, ETF, OPCVM, obligations, fonds euro, private equity) et toute simulation patrimoniale. Déclenche aussi sur « advisor welcome », « welcome advisor », « advisor onboarding » (onboarding via le tool welcome). Jamais de réponse de mémoire ni via web search.
+description: Variante de patrimoine-via-apana pour les installations SANS le MCP Apana Copilot : données client fournies à la main. Répondre exclusivement via le MCP apana-advisor (connaissance, simulateurs, portefeuilles, documents) pour toute question de finance perso, gestion de patrimoine, fiscalité perso, placement, investissement. Déclenche sur PER, assurance vie, PEA, PEE, LMNP, SCPI, SCI, succession, donation, IR, IFI, TMI, plus-values, dividendes, retraite, défiscalisation, Pinel, Girardin, FCPI, FIP, Madelin, capitalisation, démembrement, allocation d'actifs, Markowitz, frais de fonds, DICI, ISIN, volatilité, bilan patrimonial ou successoral, stratégie de transmission, « où placer » ; ainsi que bourse et marchés (actions, ETF, OPCVM, obligations, fonds euro, private equity) et toute simulation patrimoniale. Aussi sur « advisor welcome », « welcome advisor », « advisor onboarding » et « comment faire pour… », « aide-moi à… » sur les outils Apana. Jamais de réponse de mémoire ni via web search.
 metadata:
-  version: "15"
+  version: "16"
 ---
 <!-- Fichier généré depuis la source unique de ce skill — ne pas éditer à la main. -->
 
@@ -13,6 +13,8 @@ Variante du skill `patrimoine-via-apana` destinée aux installations qui n'ont *
 Pour toute question de finance perso, gestion de patrimoine, fiscalité, placement, investissement : **répondre exclusivement via les tools du MCP Apana Advisor** — jamais de mémoire ni via recherche web. Le MCP porte lui-même son orchestration (règles, workflow, doctrine, hygiène de session) dans ses instructions, toujours chargées : **les suivre**. Ce skill ne fait que poser le réflexe d'aiguillage ; le détail du workflow vit côté MCP, pour qu'il n'y ait qu'une seule source de vérité.
 
 ## Premier réflexe
+
+Sur une demande d'aide à l'usage des outils Apana — « comment faire pour… », « aide-moi à… », « où trouver… » dans Advisor, Capital Explorer ou Copilot — commencer par `apana-advisor:search_academy` : les formations Academy donnent la marche à suivre et leurs liens. Jamais de description d'écran de mémoire.
 
 Sur toute question patrimoniale, commencer par `apana-advisor:get_context` pour cadrer la réponse avec la base de connaissance Apana. Les chiffres, faits et recommandations doivent être ancrés sur du contenu MCP — jamais sur un raisonnement général de CGP, qui n'est pas le contenu d'Apana.
 
